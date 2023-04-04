@@ -1,0 +1,137 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(116, 172, 195);
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  width: 1200px;
+  height: 800px;
+  grid-template-columns: 350px 850px;
+  grid-template-rows: 75px 650px 75px;
+  background-color: black;
+  border-radius: 20px;
+  gap: 1px;
+}
+
+#search {
+  width: 85%;
+  height: 50%;
+  /* opacity: 0.7; */
+}
+
+#search::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+#message {
+  width: 75%;
+  height: 50%;
+  justify-self: end;
+}
+
+.texts {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+.texts > img{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: start;
+}
+
+.texts {
+  /* justify-self:   ; */
+}
+
+.textContent > p {
+  background-color: gray;
+  padding: 10px;
+  border-radius: 10px 10px 10px 0;
+}
+
+.textContent.you > p {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px 10px 0 10px;
+}
+
+.you.textContent{
+  border-radius: 10px 10px 0px 10px;
+}
+
+.textContent:nth-child(odd) {
+  text-align: end;
+}
+
+.gridItem {
+  display: flex;
+  align-items: center;
+}
+
+.gridItem:nth-child(odd) {
+  background-color: rgb(63, 115, 206);
+}
+
+.gridItem:nth-child(1) {
+  justify-content: end;
+  border-radius: 20px 0 0 0;
+}
+
+.gridItem:nth-child(2) {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  background-color: rgb(229, 237, 243);
+  box-sizing: border-box;
+  padding: 25px;
+  border-radius: 0 20px 0 0;
+}
+
+.gridItem:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  box-sizing: border-box;
+  height: 1000px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.gridItem:nth-child(5) {
+  border-radius: 0 0 0 20px;
+}
+
+.gridItem:nth-child(5) > div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.gridItem:nth-child(5) > div > i {
+  color: rgb(63, 115, 206);
+}
+
+.gridItem:nth-child(6) {
+  background-color: rgb(199, 199, 199);
+  border-radius: 0 0 20px 0;
+  justify-content: space-around;
+}
+
+.fa-paperclip {
+}
